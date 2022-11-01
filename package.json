@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "clean": "rimraf public/",
-    "build": "npm run clean && NODE_ENV=production npx @11ty/eleventy --input=src --pathprefix='/website/'",
+    "build": "npm run clean && NODE_ENV=production npx @11ty/eleventy --input=src",
     "start": "npx @11ty/eleventy --input=src --serve --port=8081",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
