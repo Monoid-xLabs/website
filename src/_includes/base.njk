@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% metagen
+    title="Monoid Labs",
+    desc="Building the next frontier in Distributed Systems",
+    url="https://monoidlabs.xyz",
+    img="https://monoidlabs.xyz/assets/image/logo/logo-color.png",
+    img_alt="Monoid Labs",
+    twitter_card_type="summary_large_image",
+    twitter_handle="monoidlabs",
+    name="monoidlabs"
+    %}
+  </head>
+  {% include 'partials/links.njk' %}
+  <body class="bg-background">
+    {{ content | safe }}
+  </body>
+</html>

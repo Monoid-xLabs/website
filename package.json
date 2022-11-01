@@ -1,0 +1,36 @@
+{
+  "name": "monoid-labs-website",
+  "version": "0.0.1",
+  "description": "Website of Monoid Labs",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf public/",
+    "build": "npm run clean && NODE_ENV=production npx @11ty/eleventy --input=src",
+    "start": "npx @11ty/eleventy --input=src --serve --port=8081",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Monoid-xLabs/website.git"
+  },
+  "keywords": [
+    "website"
+  ],
+  "author": "Boot-Error <booterror99@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Monoid-xLabs/website/issues"
+  },
+  "homepage": "https://github.com/Monoid-xLabs/website#readme",
+  "devDependencies": {
+    "rimraf": "^3.0.2"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^1.0.2",
+    "axois": "^0.0.1-security",
+    "eleventy-plugin-metagen": "^1.7.11",
+    "eleventy-plugin-tailwindcss": "^0.3.0",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.4"
+  }
+}
