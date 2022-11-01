@@ -5,15 +5,19 @@ const moment = require("moment");
 
 module.exports = function (eleventyConfig) {
   // passthrough copy
-  eleventyConfig.addPassthroughCopy({ "./src/assets": "assets" });
+  eleventyConfig.addPassthroughCopy({ 
+    "./src/assets/js": "assets/js",
+    "./src/assets/data": "assets/data",
+    "./src/assets/image": "assets/image",
+  });
 
   // plugins
   eleventyConfig.addPlugin(pluginMetagen);
   eleventyConfig.addPlugin(pluginTailwindCSS, {
     src: "src/assets/css/*.css",
-    dest: "assets",
-    keepFolderStructure: false,
-    minify: false,
+    dest: "",
+    keepFolderStructure: true,
+    minify: true,
   });
 
   // filters
