@@ -1,7 +1,5 @@
 const pluginTailwindCSS = require("eleventy-plugin-tailwindcss");
 const pluginMetagen = require("eleventy-plugin-metagen");
-const _ = require("lodash");
-const moment = require("moment");
 
 module.exports = function (eleventyConfig) {
   // passthrough copy
@@ -18,11 +16,6 @@ module.exports = function (eleventyConfig) {
     dest: "",
     keepFolderStructure: true,
     minify: true,
-  });
-
-  // filters
-  eleventyConfig.addFilter("prettyDate", (date) => {
-    return moment(date).format("Do MMM, YYYY");
   });
 
   return {
