@@ -4,6 +4,6 @@
   *
   * @see {https://github.com/VincentGarreau/particles.js/} Particles Js
   */
-particlesJS.load('particles', '/assets/data/particles-config.json', function() {
+particlesJS.load('particles', 'assets/data/particles-config.json', function() {
   console.log('callback - particles.js config loaded');
 });
